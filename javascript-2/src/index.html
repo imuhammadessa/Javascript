@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <title>Javascript-2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- <button
+            class="btn btn-warning btn-lg"
+            onclick="sayHello('Good Morning!', 'Muhammad', 'JS24')"
+          >
+            Claim Discount
+          </button> -->
+
+          <button class="btn btn-warning btn-lg" onclick="discount()">
+            Claim Discount
+          </button>
+          <div id="area"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function discount() {
+        let promo = prompt("Enter Your Promo Code");
+
+        const getPromoCode = (promo * 5) / 100;
+        document.getElementById("area").innerHTML = getPromoCode;
+      }
+      // function sayHello(message, name, promo) {
+      //   alert(message + " " + name + ", Your promo code is: " + promo);
+      // }
+    </script>
+  </body>
+</html>
