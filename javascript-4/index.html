@@ -10,45 +10,28 @@
     <title>Array Methods</title>
   </head>
   <body>
-    <div class="container my-5 text-center w-50 mx-auto p-5">
-      <table class="dark w-100" border="1px solid black">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users?.map((users) => {
-          <tr>
-            <td>user.name</td>
-            <td>user.email</td>
-            <td>user.phone</td>
-          </tr>
-          })
-        </tbody>
-      </table>
-      <button class="btn btn-primary w-100 mt-3">ADD RECORD</button>
+    <div class="container">
+      <h1>Hello World</h1>
     </div>
     <script>
-      const users = [
-        {
-          name: "john",
-          email: "johndoe@me.com",
-          phone: 231234568,
-        },
-        {
-          name: "john",
-          email: "johndoe@me.com",
-          phone: 231234568,
-        },
-        {
-          name: "john",
-          email: "johndoe@me.com",
-          phone: 231234568,
-        },
-      ];
+      var a = prompt("Enter your username: ");
+      switch (username) {
+        case "john":
+          alert("John has successfully logged In.", input);
+          break;
+
+        case "brad":
+          alert("Brad has successfully logged In.");
+          break;
+
+        case "saim":
+          alert("Saim has sucessfully logged In");
+          break;
+
+        default:
+          alert("Not registred");
+          break;
+      }
     </script>
   </body>
 </html>
